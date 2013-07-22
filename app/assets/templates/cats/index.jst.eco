@@ -1,1 +1,3 @@
-HI <%= 4 + 4 %>
+<% for cat in this.cats.models: %>
+  <li><%= cat.get('name') %></li>
+<% end %>
