@@ -1,1 +1,2 @@
 <%= this.name %>, <%= this.breed %>
+<button>Delete</button>

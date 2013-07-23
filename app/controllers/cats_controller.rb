@@ -15,5 +15,10 @@ class CatsController < ApplicationController
     respond_with Cat.find(params[:id])
   end
 
+  def destroy
+    Cat.find(params[:id]).destroy
+    respond_with nothing: true
+  end
+
 
 end

@@ -7,9 +7,6 @@ class Catfax.Views.CatsIndex extends Backbone.View
   initialize: ->
     this.collection.on('reset', this.render, this)
 
-  events: ->
-    'click button' : this.erase
-
   # Custom events for the view
   render: ->
     # $(this.el).html(this.template(cats: this.collection))
@@ -22,9 +19,7 @@ class Catfax.Views.CatsIndex extends Backbone.View
     cat_view = new Catfax.Views.CatsShow({model: cat})
     this.$el.append(cat_view.render().el)
 
-  erase: (e) ->
-    # alert('Should be erasing!')
-    $(e.target).parent().fadeOut()
+
 
 
 
