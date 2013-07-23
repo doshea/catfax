@@ -4,6 +4,7 @@ class Catfax.Routers.Cats extends Backbone.Router
     'cats/:id': 'show'
 
   initialize: ->
+    #  Makes an empty collection of Cat models
     this.collection = new Catfax.Collections.Cats()
     this.collection.fetch({reset: true})
 

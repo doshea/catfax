@@ -1,3 +1,6 @@
 <% for cat in this.cats.models: %>
-  <li><%= cat.get('name') %></li>
+  <li>
+    <%= cat.get('name') %>
+    <button>Delete</button>
+  </li>
 <% end %>
