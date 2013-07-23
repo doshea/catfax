@@ -20,5 +20,36 @@ class CatsController < ApplicationController
     respond_with nothing: true
   end
 
+  def create
+    cat = Cat.new(cat_params)
+    if cat.save
+      respond_with cat
+    else
+      respond_with nothing: true
+    end
+  end
+
+  private
+  def cat_params
+    params.require(:cat).permit(:name, :breed)
+  end
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

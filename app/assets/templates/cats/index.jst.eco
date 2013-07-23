@@ -1,6 +1,5 @@
-<% for cat in this.cats.models: %>
-  <li>
-    <%= cat.get('name') %>
-    <button>Delete</button>
-  </li>
-<% end %>
+<form>
+  <input type='text' name='name' placeholder = 'Name'/>
+  <input type='text' name='breed' placeholder = 'Breed' />
+  <button>Add Cat</button>
+</form>

@@ -10,7 +10,7 @@ class Catfax.Views.CatsShow extends Backbone.View
 
   events: ->
     'click button' : this.erase
-    'mouseover' : this.highlight
+    # 'mouseover' : this.highlight
 
   #  Sets the contents of the <li> element generated
   #  by this view to its template
@@ -23,10 +23,11 @@ class Catfax.Views.CatsShow extends Backbone.View
     this.$el.fadeOut()
     this.model.destroy()
 
-  highlight: (e) ->
-    this.$el.css(
-      'backgroundColor' : 'red'
-    )
+  #  example hover event function
+  # highlight: (e) ->
+  #   this.$el.css(
+  #     'backgroundColor' : 'red'
+  #   )
 
 
 
