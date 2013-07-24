@@ -2,8 +2,11 @@
 //= require jquery
 //= require jquery_ujs
 //
+// BACKBONE DEPENDENCIES
 //= require underscore
 //= require backbone
+//
+// BACKBONE COMPONENTS
 //= require catfax
 //= require_tree ../templates
 //= require_tree ./models
